@@ -7,12 +7,12 @@ create table tUsuarios{
     apellidos varchar(100),
     email varchar(200) unique,
     contraseña varchar(200)
-}
+};
 create table tPeliculas{
     id int primary key auto_increment,
     nombre varchar(50),
     url_imagen varchar(50),
-}
+};
 create table tComentarios{
     id int primary key auto_increment,
     comentario varchar(50),
@@ -21,7 +21,7 @@ create table tComentarios{
     FOREIGN key(usuario_id) REFERENCES tUsuarios (id),
     FOREIGN key(pelicula_id) REFERENCES tPeliculas (id)
    
-}
+};
 
 insert into tUsuarios values("0","Nombre1", "Apellido1", "email1", "1234");
 insert into tUsuarios values("0","Nombre2", "Apellido2", "email2", "1234");
