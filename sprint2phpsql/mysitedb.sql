@@ -11,7 +11,7 @@ create table tUsuarios{
 create table tPeliculas{
     id int primary key auto_increment,
     nombre varchar(50),
-    url_imagen varchar(50),
+    url_imagen varchar(50)
 };
 create table tComentarios{
     id int primary key auto_increment,
