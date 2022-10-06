@@ -10,5 +10,11 @@
 		$query = 'SELECT * FROM tPeliculas';
 		mysqli_query($db, $query) or die('Query error');
 	?>
+	<?php
+		$query = 'SELECT * FROM tCanciones';
+		$result = mysqli_query($db, $query) or die('Query error');
+		while ($row = mysqli_fetch_array($result)) {
+		}
+	?>
 </body>
 </html>
