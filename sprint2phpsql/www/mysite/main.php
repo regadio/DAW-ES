@@ -20,20 +20,13 @@
 			echo '<br>';
 			echo $row[2];
 			echo '<br>';
-			echo'<div class="tarjeta">'
-					'<div class="titulo">'
-						 .$row['nombre'];
-					'</div>'
-					'<div class="cuerpo">'
-						<img src="" alt="muestra">
-					'</div>'
-					'<div class="pie">'
-						id
-					'</div>'
-				'</div>'
-			;
 		}
 	?> 
+
+	<div class="tarjeta">
+		<?php $row['nombre']?>
+	</div>
+
 	<div class="tarjeta">
 		<div class="titulo">
 			echo $row['nombre'];
