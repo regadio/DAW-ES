@@ -36,8 +36,8 @@ insert into tPeliculas values("0", "Origen", "https://pics.filmaffinity.com/ince
 insert into tPeliculas values("0", "Avatar", "https://pics.filmaffinity.com/avatar-832187025-mmed.jpg");
 insert into tPeliculas values("0", "Tadeo Jones 3", "https://pics.filmaffinity.com/tadeo_jones_3_la_tabla_esmeralda-118107760-msmall.jpg");
 
-insert into tComentarios values("0","comentario1","","");
-insert into tComentarios values("0","comentario2","","");
-insert into tComentarios values("0","comentario3","","");
-insert into tComentarios values("0","comentario4","","");
-insert into tComentarios values("0","comentario5","","");
+insert into tComentarios(id, comentario) values("0","comentario1");
+insert into tComentarios(id, comentario) values("0","comentario2");
+insert into tComentarios(id, comentario) values("0","comentario3");
+insert into tComentarios(id, comentario) values("0","comentario4");
+insert into tComentarios(id, comentario) values("0","comentario5");
