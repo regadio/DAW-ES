@@ -18,7 +18,7 @@ create table tComentarios(
     id int primary key auto_increment,
     comentario varchar(50),
     usuario_id int,
-    pelicula_id int not null,
+    pelicula_id int ,
     FOREIGN key(usuario_id) REFERENCES tUsuarios (id),
     FOREIGN key(pelicula_id) REFERENCES tPeliculas (id)
    
