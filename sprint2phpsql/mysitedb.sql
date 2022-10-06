@@ -1,3 +1,4 @@
+drop database if EXISTS mysitedb;
 create database mysitedb;
 USE mysitedb;
 
