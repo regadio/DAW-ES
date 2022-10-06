@@ -15,17 +15,11 @@
 	<?php
 		$query = 'SELECT * FROM tPeliculas';
 		$result = mysqli_query($db, $query) or die('Query error');
-		while ($row = mysqli_fetch_array($result)) {
-			echo $row['nombre'];
-			echo '<br>';
-			echo $row[2];
-			echo '<br>';
-		}
-	?> 
-
-	<div class="tarjeta">
-		<?php $row['nombre']?>
-	</div>
+		while ($row = mysqli_fetch_array($result)) {?>
+			<div class="tarjeta">
+				<?php $row['nombre']?>
+			</div>
+	<?php} ?>
 
 	<div class="tarjeta">
 		<div class="titulo">
