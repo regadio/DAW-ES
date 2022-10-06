@@ -21,18 +21,5 @@
 			</div>
 	<?php} ?>
 
-	<div class="tarjeta">
-		<div class="titulo">
-			echo $row['nombre'];
-		</div>
-		<div class="cuerpo">
-		<img src="" alt="muestra">
-		
-		</div>
-		<div class="pie">
-		id
-		</div>
-	</div>
-
 </body>
 </html>
