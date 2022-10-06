@@ -16,9 +16,9 @@
 		$query = 'SELECT * FROM tPeliculas';
 		$result = mysqli_query($db, $query) or die('Query error');
 		while ($row = mysqli_fetch_array($result)) {?>
-			<div class="tarjeta">
+			<!-- <div class="tarjeta">
 				<?php $row['nombre']?>
-			</div>
+			</div> -->
 	<?php} ?>
 
 </body>
