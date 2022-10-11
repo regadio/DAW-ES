@@ -34,7 +34,7 @@ insert into tPeliculas values("0", "Interestellar", "https://m.media-amazon.com/
 insert into tPeliculas values("0", "Minions", "https://cineslys.reservaentradas.com/cineslys/obj/LCinesD_dat/eventos/JPG0021p.jpg");
 insert into tPeliculas values("0", "Origen", "https://lamadraza.ugr.es/wp-content/uploads/2018/11/origen-1.jpg");
 insert into tPeliculas values("0", "Avatar", "https://www.mubis.es/media/covers/1090/1124/avatar-edicion-extendida-coleccionistas-portada-original.jpg");
-insert into tPeliculas values("0", "Tadeo Jones 3", "https://pics.filmaffinity.com/Tadeo_Jones_3_La_tabla_esmeralda-905203507-large.jpg");
+insert into tPeliculas values("0", "Tadeo Jones 3", "https://m.media-amazon.com/images/I/91r2TAaV0tL.jpg");
 
 insert into tComentarios(id, comentario) values("0","comentario1");
 insert into tComentarios(id, comentario) values("0","comentario2");
