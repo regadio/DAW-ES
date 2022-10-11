@@ -5,7 +5,7 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 <h1>Conexión establecida</h1>
 <?php
 // Lanzar una query
-$query = 'SELECT * FROM tJuegos';
+$query = 'SELECT * FROM tPeliculas';
 $result = mysqli_query($db, $query) or die('Query error');
 echo '<table style="text-align: center;">';
 echo '<td colspan="3" style="background-color: #7677E8;">Good Games</td>';
