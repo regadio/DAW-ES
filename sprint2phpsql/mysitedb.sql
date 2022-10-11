@@ -31,10 +31,10 @@ insert into tUsuarios values("0","Nombre4", "Apellido4", "email4", "1234");
 insert into tUsuarios values("0","Nombre5", "Apellido5", "email5", "1234");
 
 insert into tPeliculas values("0", "Interestellar", "https://m.media-amazon.com/images/I/A1JVqNMI7UL._SL1500_.jpg");
-insert into tPeliculas values("0", "Minions", "https://pics.filmaffinity.com/minions_the_rise_of_gru-608394212-large.jpg");
-insert into tPeliculas values("0", "Origen", "https://pics.filmaffinity.com/inception-652954101-mmed.jpg");
-insert into tPeliculas values("0", "Avatar", "https://pics.filmaffinity.com/avatar-832187025-mmed.jpg");
-insert into tPeliculas values("0", "Tadeo Jones 3", "https://pics.filmaffinity.com/tadeo_jones_3_la_tabla_esmeralda-118107760-msmall.jpg");
+insert into tPeliculas values("0", "Minions", "https://cineslys.reservaentradas.com/cineslys/obj/LCinesD_dat/eventos/JPG0021p.jpg");
+insert into tPeliculas values("0", "Origen", "https://lamadraza.ugr.es/wp-content/uploads/2018/11/origen-1.jpg");
+insert into tPeliculas values("0", "Avatar", "https://www.mubis.es/media/covers/1090/1124/avatar-edicion-extendida-coleccionistas-portada-original.jpg");
+insert into tPeliculas values("0", "Tadeo Jones 3", "https://pics.filmaffinity.com/Tadeo_Jones_3_La_tabla_esmeralda-509556908-large.jpg");
 
 insert into tComentarios(id, comentario) values("0","comentario1");
 insert into tComentarios(id, comentario) values("0","comentario2");
