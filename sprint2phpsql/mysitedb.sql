@@ -30,7 +30,7 @@ insert into tUsuarios values("0","Nombre3", "Apellido3", "email3", "1234");
 insert into tUsuarios values("0","Nombre4", "Apellido4", "email4", "1234");
 insert into tUsuarios values("0","Nombre5", "Apellido5", "email5", "1234");
 
-insert into tPeliculas values("0", "Interestellar", "https://pics.filmaffinity.com/interstellar-366875261-large.jpg");
+insert into tPeliculas values("0", "Interestellar", "https://m.media-amazon.com/images/I/A1JVqNMI7UL._SL1500_.jpg");
 insert into tPeliculas values("0", "Minions", "https://pics.filmaffinity.com/minions_the_rise_of_gru-608394212-large.jpg");
 insert into tPeliculas values("0", "Origen", "https://pics.filmaffinity.com/inception-652954101-mmed.jpg");
 insert into tPeliculas values("0", "Avatar", "https://pics.filmaffinity.com/avatar-832187025-mmed.jpg");
