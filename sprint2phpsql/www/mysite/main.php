@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="./main.css">
 	<title>Document</title>
 </head>
 <body>
@@ -21,13 +21,13 @@ echo '<table">';
 // Recorrer el resultado
 while ($row = mysqli_fetch_array($result)) {
   echo '<tr>';  
-          echo '<td style="background-color: #7677E8" width="80" >';
+          echo '<td class="id" >';
                 echo $row['id'];
         echo '</td>';
-        echo '<td>';
+        echo '<td class="nombre">';
                 echo $row['nombre'];
         echo '</td>';
-        echo '<td>';
+        echo '<td class="imagen">';
                 echo '<img src=" '.$row[2].'"  width="80" height="120">';
         echo '</td>';
   echo '</tr>';
