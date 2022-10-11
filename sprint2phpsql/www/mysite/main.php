@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
-	<title>Document</title>
+	<title>PHPSQL</title>
 </head>
 <body>
- <?php
+ 	<?php
 		$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 	?>
 
@@ -19,6 +19,10 @@
 			<!-- <div class="tarjeta">
 				<?php $row['nombre']?>
 			</div> -->
+			<tr>
+				<td><?php $row['nombre']?></td>
+			</tr>
+			<?php $row['nombre']?>
 	<?php} ?>
 
 </body>
