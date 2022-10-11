@@ -23,7 +23,7 @@
 				<td><?php $row['nombre']?></td>
 			</tr>
 			<?php $row['nombre']?>
-	<?php} ?>
+	<?php } ?>
 
 </body>
 </html>
