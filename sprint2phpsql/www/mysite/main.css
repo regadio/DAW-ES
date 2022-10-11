@@ -1,17 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.caja{
-    width: 100px;
-    height:100px;
-    background-color: brown;
-}
-.tarjeta{
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-width:420px;
-border: 2px solid lightgray;
-background-color: rgb(206, 205, 205);
+table,th,td,tr {
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
 }
