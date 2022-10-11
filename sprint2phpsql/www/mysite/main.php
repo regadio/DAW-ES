@@ -13,6 +13,7 @@
 $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 <h1>Conexión establecida</h1>
+<p>Prueba</p>
 <?php
 // Lanzar una query
 $query = 'SELECT * FROM tPeliculas';
