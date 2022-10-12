@@ -14,7 +14,7 @@
     ?>
     <?php
       // Lanzar una query
-      $query = 'SELECT * FROM tPeliculas';
+      $query = 'SELECT * FROM tpelicula';
       $result = mysqli_query($db, $query) or die('Query error');
       echo '<table style="text-align: center;">';
         echo '<td colspan="3" style="background-color: #F5C858;">Lista de Peliculas</td>';
@@ -22,10 +22,10 @@
         while ($row = mysqli_fetch_array($result)) {
           echo '<tr>';  
                 echo '<td style="background-color: #F5C858" width="80" >';
-                        echo $row['id'];
+                        echo $row['id_usuario'];
                 echo '</td>';
                 echo '<td>';
-                  echo'<a href="/detail.php?id='.$row['id'].'">'.$row['nombre'].'</a>';
+                  echo'<a href="/detail.php?id='.$row['id_usuario'].'">'.$row['nombre'].'</a>';
                 echo '</td>';
                 echo '<td>';
                         echo '<img src=" '.$row[2].'"  width="80" height="120">';
