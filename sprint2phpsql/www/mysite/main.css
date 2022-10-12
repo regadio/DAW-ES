@@ -4,7 +4,5 @@
 }
 table tr td{
     border: 1px solid black;
-}
-p {
-    font-size: 40px;
+    border-collapse: collapse;
 }

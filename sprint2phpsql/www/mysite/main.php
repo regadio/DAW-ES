@@ -10,31 +10,30 @@
 </head>
 <body>
 <?php
-$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
-?>
-<h1>Conexión establecida</h1>
-<p>Prueba</p>
-<?php
-// Lanzar una query
-$query = 'SELECT * FROM tPeliculas';
-$result = mysqli_query($db, $query) or die('Query error');
-echo '<table">';
-// Recorrer el resultado
-while ($row = mysqli_fetch_array($result)) {
-  echo '<tr>';  
-          echo '<td class="id" >';
-                echo $row['id'];
-        echo '</td>';
-        echo '<td class="nombre">';
-                echo $row['nombre'];
-        echo '</td>';
-        echo '<td class="imagen">';
-                echo '<img src=" '.$row[2].'"  width="80" height="120">';
-        echo '</td>';
-  echo '</tr>';
-}
-echo '</table>';
-mysqli_close($db);
-?>
+      $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
+    ?>
+    <?php
+      // Lanzar una query
+      $query = 'SELECT * FROM tPeliculas';
+      $result = mysqli_query($db, $query) or die('Query error');
+      echo '<table style="text-align: center;">';
+        echo '<td colspan="3" style="background-color: #F5C858;">Lista de Peliculas</td>';
+        // Recorrer el resultado
+        while ($row = mysqli_fetch_array($result)) {
+          echo '<tr>';  
+                echo '<td style="background-color: #F5C858" width="80" >';
+                        echo $row['id'];
+                echo '</td>';
+                echo '<td>';
+                  echo'<a href="/detail.php?id='.$row['id'].'">'.$row['nombre'].'</a>';
+                echo '</td>';
+                echo '<td>';
+                        echo '<img src=" '.$row[2].'"  width="80" height="120">';
+                echo '</td>';
+          echo '</tr>';
+        }
+    echo '</table>';
+    mysqli_close($db);
+    ?>
 </body>
 </html>
