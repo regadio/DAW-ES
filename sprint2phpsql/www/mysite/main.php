@@ -22,10 +22,10 @@
         while ($row = mysqli_fetch_array($result)) {
           echo '<tr>';  
                 echo '<td style="background-color: #F5C858" width="80" >';
-                        echo $row['id_usuario'];
+                        echo $row['id_pelicula'];
                 echo '</td>';
                 echo '<td>';
-                  echo'<a href="/detail.php?id='.$row['id_usuario'].'">'.$row['nombre'].'</a>';
+                  echo'<a href="/detail.php?id='.$row['id_pelicula'].'">'.$row['nombre'].'</a>';
                 echo '</td>';
                 echo '<td>';
                         echo '<img src=" '.$row[2].'"  width="80" height="120">';
