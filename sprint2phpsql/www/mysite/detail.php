@@ -6,7 +6,7 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 <body style="text-align: center;">
     <?php
     if (!isset($_GET['id'])) {
-        die('No se ha especificado un juego');
+        die('No se ha especificado un pelicula');
     }
     $pelicula_id = $_GET['id'];
     $query = 'SELECT * FROM tpelicula WHERE id_pelicula=' . $pelicula_id;
@@ -27,6 +27,12 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
         mysqli_close($db);
         ?>
     </ul>
+    <p>Deja un nuevo comentario:</p>
+	<form action="/comment.php" method="post">
+		<textarea rows="4" cols="50" name="new_comment"></textarea><br>
+		<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
+		<input type="submit" value="Comentar">
+	</form>
 </body>
 
 </html>
