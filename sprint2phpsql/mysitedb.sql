@@ -20,7 +20,7 @@ create table tcomentario(
     comentario varchar(50),
     id_usuario int,
     id_pelicula int,
-    fecha date
+    fecha datetime
 );
 ALTER TABLE tcomentario add constraint fk_id_usuario FOREIGN KEY(id_usuario) REFERENCES tusuario(id_usuario);
 ALTER TABLE tcomentario add constraint fk_id_pelicula FOREIGN KEY(id_pelicula) REFERENCES tpelicula(id_pelicula);
