@@ -19,7 +19,8 @@ create table tcomentario(
     id_comentario int primary key auto_increment,
     comentario varchar(50),
     id_usuario int,
-    id_pelicula int 
+    id_pelicula int,
+    fecha date
 );
 ALTER TABLE tcomentario add constraint fk_id_usuario FOREIGN KEY(id_usuario) REFERENCES tusuario(id_usuario);
 ALTER TABLE tcomentario add constraint fk_id_pelicula FOREIGN KEY(id_pelicula) REFERENCES tpelicula(id_pelicula);
