@@ -4,7 +4,7 @@
 <html>
 <body>
 	<?php 
-		$id_pelicula = $_POST['id_pelicula'];
+		$id_pelicula = $_POST['pelicula_id'];
 		$comentario = $_POST['new_comment'];
 
 		$query = "INSERT INTO tcomentario(comentario,id_pelicula,id_usuario, fecha) VALUES ('"
