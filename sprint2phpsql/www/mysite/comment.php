@@ -15,7 +15,7 @@
 		echo mysqli_insert_id($db);
 		echo " añadido</p>";
 
-		echo "<a href='/detail.php?id_pelicula=" 
+		echo "<a href='/detail.php?id=" 
 		.$id_pelicula." '>Volver</a>";
 		mysqli_close($db);
 	?>
