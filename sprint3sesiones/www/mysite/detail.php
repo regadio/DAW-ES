@@ -33,6 +33,7 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 		<input type="hidden" name="pelicula_id" value="<?php echo $pelicula_id; ?>">
 		<input type="submit" value="Comentar">
 	</form>
+    <a href="/logout.php">Logout</a>
 </body>
 
 </html>
