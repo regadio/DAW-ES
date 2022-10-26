@@ -19,10 +19,10 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
     <h3>Comentarios:</h3>
     <ul>
         <?php
-        $query2 = 'SELECT * FROM tcomentario WHERE id_pelicula=' . $pelicula_id;
+        $query2 = 'SELECT * FROM tcomentario c join tusuario u on u.id_usuario=c.id_usuario WHERE id_pelicula=' . $pelicula_id;
         $result2 = mysqli_query($db, $query2) or die('Query error');
         while ($row = mysqli_fetch_array($result2)) {
-            echo '<li>'.$row['comentario'].' '.$row['fecha'].'</li>';
+            echo '<li>'.$row['id_usuario'].' : '.$row['comentario'].' '.$row['fecha'].'</li>';
         }
         mysqli_close($db);
         ?>
