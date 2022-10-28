@@ -30,6 +30,7 @@
 </head>
 <body>
 <a href="/logout.php">Logout</a>
+<a href="/cambiarcontraseña.html">Modificar contraseña</a>
 <?php
       $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
     ?>
