@@ -3,6 +3,9 @@ from django.http import HttpResponse, JsonResponse
 
 from .models import Tpelicula
 from .models import Tcomentario
+
+from django.views.decorators.csrf import csrf_exempt
+import json
 # Create your views here.
 def pagina_de_prueba(request):
 	return HttpResponse("<h1>Hola caracola</h1>");
@@ -36,3 +39,15 @@ def devolver_pelicula_por_id(request, id_solicitado):
 		'comentario': lista_comentarios
 	}
 	return JsonResponse(resultado, json_dumps_params={'ensure_ascii': False})
+
+@csrf_exempt
+def guardar_comentario(request, id_pelicula):
+	if request.method != 'POST':
+		return None
+
+	json_peticion = json.loads(request.body)
+	comentario = Tcomentario()
+	comentario.comentario = json_peticion['nuevo_comentario']
+	comentario.pelicula = Tpelicula.objects.get(id_pelicula = id_pelicula)
+	comentario.save()
+	return JsonResponse({"status": "ok"})

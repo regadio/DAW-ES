@@ -23,5 +23,5 @@ urlpatterns = [
     path('test', views.pagina_de_prueba),
     path('peliculas', views.devolver_peliculas),
     path('peliculas/<int:id_solicitado>', views.devolver_pelicula_por_id),
-    
+    path('peliculas/<int:id_pelicula>/comentarios', views.guardar_comentario),
 ]
